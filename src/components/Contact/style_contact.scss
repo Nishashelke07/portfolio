@@ -1,0 +1,47 @@
+:root {
+    --primary: hsla(347, 91%, 62%, 0.55);
+    --secondary: hsla(230, 96%, 62%, 0.55);
+}
+
+
+.container_contact{
+    position: absolute;
+    background: linear-gradient(var(--primary), var(--secondary)) no-repeat center center / cover ;
+    width: 100%;
+
+}
+
+.contain_all{
+   margin: 2rem;
+ 
+        .contactMe_heading{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 10%;
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        #contact-container{
+            // background: #fff;
+            // background: url('../../dist/img/alvaro-serrano-hjwKMkehBco-unsplash.png') no-repeat center center/cover;
+            background: #fff;
+            margin: 0 25%;
+            backdrop-filter: blur(0.2rem);
+            overflow: hidden;
+            box-shadow: -6px -6px 10px rgba(255,255,255, 0.2),
+                           6px 6px 10px rgba(255, 255, 255, 0.2);
+      
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #contact-container{
+        margin: 0;
+        padding: 0;
+    }
+    .contain_all{
+        margin: 0;
+    }
+}
+

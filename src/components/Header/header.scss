@@ -1,0 +1,251 @@
+
+.header {
+    &-contact{
+        // background: url('../../dist/img/bg-image.png');
+        // background-position: 20% 30%;
+        // background: lightgray;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        height: 6rem;
+        // border-bottom: 3px solid coral;
+        display: flex;
+        justify-content: space-between;
+        backdrop-filter: blur(10px);
+        padding: 0 6.5rem 0 6.5rem;
+    }
+
+        &-scrolled{
+            background: linear-gradient(0.25turn,hsla(347, 91%, 62%, 0.55),hsla(230, 96%, 62%, 0.55)),
+            url('../../dist/img/background_parallax.jpg') no-repeat 50% 85% / cover;
+                        
+            height: 5rem;
+            position: fixed;
+            left: 0;
+            z-index: 1;
+
+            display: flex;
+            padding: 0 6.5rem 0 6.5rem;
+            
+
+            justify-content: space-between;
+            // align-items: center;
+            width: 100%;
+
+            animation-duration: 1s;
+            animation-name: slidein;
+          }
+
+          @keyframes slidein {
+            from {
+              margin-top: 100%;
+              width: 300%;
+            }
+          
+            to {
+              margin-top: 0%;
+              width: 100%;
+            }
+        }
+}
+
+.main-nav {
+
+        display: flex;
+        // padding: 4rem;
+        justify-content: space-between;
+        align-items: center;
+ 
+    img {
+        height: 50px;
+        width: 50px;
+        
+        }
+    
+    .active {
+        border-bottom: 2px solid coral;
+        margin-bottom: 0;
+    }
+
+    .link_home {
+        font-size: 1.2rem;
+        padding: 1.1rem;
+        color: #fff;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    .link_about {
+        font-size: 1.2rem;
+        padding: 1.1rem;
+        color: #fff;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+        }
+            }
+
+    .link_projects {
+        font-size: 1.2rem;
+        padding: 1.1rem;
+        color: #fff;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+        }
+
+            }
+     .link_contact{
+        font-size: 1.2rem;
+        padding: 1.1rem;
+        color: #fff;
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.fa-bars {
+    color: #fff;
+  }
+
+.menu-icon{
+    display: none;
+}  
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+      }
+
+    .header-contact{
+        padding-left: 1rem;
+    }
+
+    .header-scrolled{
+        // display: none;
+        flex-direction: column;
+        width: 8%;
+        height: 8%;
+        border-radius: 50%;
+        padding: 2.2rem;
+
+        img{
+            display: none;
+        }
+    }
+
+    .main-nav {
+      display: None;  
+    }
+
+    .mobile-menu{
+        // background: red;
+    }
+
+    .link_home {
+        font-size: 1.2rem;
+        padding: 2.2rem ;       
+        color: #000;
+        font-weight: 500;
+        width: 100%;
+        line-height: 5rem;
+        margin-right: 0;
+        margin-left: 4rem;
+        background: #f4f4f4;
+        border: 1px solid #000;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    .link_about {
+        font-size: 1.2rem;
+        padding:1.8rem 6rem 2rem 6rem;
+        color: #000;
+        font-weight: 500;
+        margin-top: 1rem;
+        margin-left: 4rem;
+        width: 200%;
+        line-height: 6rem;
+        background: #f4f4f4;
+        border: 1px solid #000;
+
+        &:hover{
+            cursor: pointer;
+        }
+            }
+
+    .link_projects {
+        font-size: 1.2rem;
+        padding:2.4rem 6rem 2rem 6rem;
+        color: #000;
+        font-weight: 500;
+        margin-left: 4rem;
+        line-height: 6rem;
+        background: #f4f4f4;
+        border: 1px solid #000;
+
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+            }
+     .link_contact{
+        font-size: 1.2rem;
+        padding:2.4rem 6rem 2rem 6rem;
+        color: #000;
+        font-weight: 500;
+        margin-left: 4rem;
+        line-height: 6rem;
+        background: #f4f4f4;
+        border: 1px solid #000;
+
+        width: 100%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    
+  }
+
+
+

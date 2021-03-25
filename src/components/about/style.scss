@@ -1,0 +1,104 @@
+#about {
+  height: 100%;
+
+  &-a {
+    background: whitesmoke;
+    padding: 2rem 2rem;
+
+  .lead_about{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-info{
+      display: grid;
+      padding: 2rem 8rem 4rem 8rem;
+      grid-template-areas: 
+              'bioimage bio bio';
+      grid-gap: 3rem;
+
+        .bio-image {
+            width: 18rem;
+            height: 15rem;
+            object-fit: cover;
+            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                           6px 6px 10px rgba(0, 0, 0, 0.2);
+            color: black;
+            border: black 2px solid;
+            filter: grayscale(100);
+        }}
+
+    .bio-image {
+      grid-area: bioimage;
+    }
+    .bio{
+      grid-area: bio;
+      border-left: 3px solid lightcoral;
+      padding: 0.8rem;
+      background: whitesmoke;
+      box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                           6px 6px 10px rgba(0, 0, 0, 0.2);
+                color: black;
+    }
+    @media screen and (max-width: 960px) {
+      .about-info{
+        grid-template-areas: 'bioimage'
+                              'bio' ;
+        padding: 1rem;
+        row-gap: 1rem;
+      }
+      .lead_about{
+        padding: 0;
+        font-size: 15pt;
+      }
+      p{
+        font-size: 12pt;
+      }
+  }}
+
+  //about B
+   &-b{
+        h2{
+          text-align: center;
+          padding: 0 ;   
+          color: #000;     
+          font-weight: 300;
+        }
+        
+        .skills{
+           display: flex;
+           padding: 2% 20%;
+           justify-content: space-between;
+        }
+        #skill_childs{
+              background: whitesmoke;
+              border-radius: 1rem;
+              text-align: center;
+              cursor: pointer;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1rem;
+              font-weight: semibold;
+              transition: all 0.1s ease-in-out;
+              padding: 1.4rem;
+              box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+                           6px 6px 10px rgba(0, 0, 0, 0.2);
+                color: black; 
+        }
+
+        @media screen and (max-width: 960px) {
+          .skills{
+            padding: 0;
+            flex-wrap: wrap;
+                 }
+          #skill_childs{
+            border-radius: 8pt;
+            padding: 0.8rem;
+            margin: 0.1rem; 
+          }}
+}}
+
+  
+

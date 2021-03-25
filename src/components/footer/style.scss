@@ -1,0 +1,46 @@
+::-webkit-scrollbar { //Needed for Chrome and Safari
+    width: 0px;
+  }
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    border-radius: 6px;
+  }
+
+#main_footer {
+    background: #50514F;
+    color: #fff;
+    height: 5.5rem;
+    margin-top: 2rem; //added to compensate the contact header underline with react-scroll pacakge
+    
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.5rem;
+
+        .media_icons {
+            display: flex;
+            
+               .fab{
+                   color: #fff;
+                   margin: 2rem;
+
+                   &:hover {
+                       background:black;
+                   }
+               }
+           
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 960) {
+    #main_footer{
+        margin: 0;
+    }
+}
+

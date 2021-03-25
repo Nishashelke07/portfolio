@@ -9,7 +9,7 @@ import { faFacebookF, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fo
 const Footer = () => {
     return (
             <footer id="main_footer">
-                <div className="footer_content container">
+                <div className="footer_content ">
                      <p> Copyright &copy; 2021. All Rights Reserved.</p>
                          <div className="media_icons">
                             <FontAwesomeIcon className="fab" icon={ faFacebookF} />

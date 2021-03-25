@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -11,6 +11,7 @@ body {
     background-image: url("./dist/img/background_parallax.jpg");
 
     height: 100%;
+    width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -19,19 +20,12 @@ body {
     background-size: cover;
 }
 
-/* @media only screen and (max-device-width: 1366px) {
-    body{
-      background-attachment: scroll;
-    }
-  } */
+
 
 .container {
     width: 1280px;
-    /* width: min(90%, 70.5rem); */
     margin: 0 auto;
-    /* margin-inline: auto; */
     position: relative;
-    /* height: 100vh; */
 }
 
 a {

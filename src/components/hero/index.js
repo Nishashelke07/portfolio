@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/styles.scss'
-// import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 import Header from '../Header/Header'
 import { animateScroll as scroll } from "react-scroll";
 
@@ -36,9 +36,9 @@ const Hero = () => {
                     <h1> I'm Suraj </h1>
                     <p> Full Stack Developer &amp; a budding  </p>
                     <div className="typewriting-effect">
-                    {/* <Typewriter options={{loop: true}} onInit={(typewriter => typewriter.typeString("UI/UX Designer!").pauseFor(2000).deleteAll().typeString('PhotoGrapher!')
+                    <Typewriter options={{loop: true}} onInit={(typewriter => typewriter.typeString("UI/UX Designer!").pauseFor(2000).deleteAll().typeString('PhotoGrapher!')
                             .pauseFor(1000).deleteAll().typeString('Pianist!').pauseFor(1000).deleteAll().typeString('Blogger!')
-                            .pauseFor(1000).deleteAll().start())}/> */}
+                            .pauseFor(1000).deleteAll().start())}/>
                     </div>
                 </div>
                 <div className="ellipse">

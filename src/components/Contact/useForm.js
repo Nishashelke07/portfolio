@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import emailjs from 'emailjs-com';
 
 const useForm = (callback, validate) => {  
     const [values, setValues] = useState({
@@ -19,12 +20,23 @@ const useForm = (callback, validate) => {
         });
     };
 
+    function sendEmail() {
+
+        emailjs.sendForm('service_qoqceoq', 'template_we21m3b', {values}, 'user_zB3aCxYHb5taFHGW0SFYH')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         console.log("hola!")
         setErrors(validate(values));
         setisSubmitting(true);
+        sendEmail();
        
     } 
 

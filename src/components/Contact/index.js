@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './style_contact.scss'
-import ContactInfo from './contactInfo'
 import FormMessage from './form'
 import FormSuccess from './FormSuccess'
 import Footer from '../footer/index'
@@ -23,7 +22,6 @@ const Contact = () => {
                     <p> Have any questions or remarks? Just write me a message.</p>
                 </div>
                 <div id="contact-container">
-                    {/* <ContactInfo/> */}
                     {!isSubmitted ? (<FormMessage submitForm={submitForm}/>): (<FormSuccess/>)}
                 </div>
                 

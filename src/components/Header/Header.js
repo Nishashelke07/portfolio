@@ -53,6 +53,7 @@ const Header = () => {
             <img src={logo} alt='logo' id='logo' onClick={scroll.scrollToTop} ></img>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                {button}
             </div>
             <nav className={click ? 'mobile-menu' : 'main-nav'}>               
                     <Link activeClass="active" to="Home_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500}  className="link_home">  Home </Link>
@@ -60,9 +61,8 @@ const Header = () => {
                     <Link activeClass="active" to="Projects_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_projects"> Projects </Link>
                     <Link activeClass="active" to="Contact_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_contact"> Contact </Link>
             </nav>
-         </div>
-         
-         </>
+        </div>
+        </>
         
     )
 }

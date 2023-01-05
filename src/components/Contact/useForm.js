@@ -23,30 +23,24 @@ const useForm = (callback, validate) => {
     function sendEmail() {
 
         emailjs.sendForm('service_qoqceoq', 'template_we21m3b', {values}, 'user_zB3aCxYHb5taFHGW0SFYH')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      }
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log("hola!")
         setErrors(validate(values));
         setisSubmitting(true);
         sendEmail();
-       
     } 
 
     useEffect(() => {
-        if (Object.keys(errors).length === 0 && 
-            isSubmitting )
-            {  callback()}
-        
-        
-    }, [errors])
+        if (Object.keys(errors).length === 0 && isSubmitting) callback();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[errors])
 
     return {handleChange, values, handleSubmit, errors, isSubmitting};
 }

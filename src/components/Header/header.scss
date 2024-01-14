@@ -16,9 +16,9 @@
 
         &-scrolled{
             background: linear-gradient(0.25turn,hsla(347, 91%, 62%, 0.55),hsla(230, 96%, 62%, 0.55)),
-            url('../../dist/img/background_parallax.jpg') no-repeat 50% 85% / cover;
+            url('../../dist/img/artist.jpeg') no-repeat 50% 85% / cover;
                         
-            height: 5rem;
+            height: 4.5rem;
             position: fixed;
             left: 0;
             z-index: 1;
@@ -31,19 +31,19 @@
             // align-items: center;
             width: 100%;
 
-            animation-duration: 1s;
+            // animation-duration: 200ms;
             animation-name: slidein;
           }
 
           @keyframes slidein {
             from {
-              margin-top: 100%;
-              width: 300%;
+            //   margin-top: 100%;
+            //   width: 300%;
             }
           
             to {
               margin-top: 0%;
-              width: 100%;
+            //   width: 100%;
             }
         }
 }

@@ -8,7 +8,7 @@
 body {
     font-family: 'Raleway', sans-serif;
 
-    background-image: url("./dist/img/background_parallax.jpg");
+    background-image: url("./dist/img/pl.jpg");
 
     height: 100%;
     width: 100%;
@@ -19,8 +19,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 .container {
     width: 1280px;

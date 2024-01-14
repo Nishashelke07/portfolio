@@ -1,0 +1,36 @@
+
+
+[
+    {
+        "title": "Artium Academy",
+        "id": "1",
+        "homePage": "https://artiumacademy.com/bookfreetrial/online-western-vocal-music-classes",
+        "imgURL": "https://www.newsvoir.com/images/article/image1/23880_Ab-India-Seekhega-Music.jpg",
+        "info": "",
+        "stack": ""
+    },
+    {
+        "title": "Estee Lauder",
+        "id": "2",
+        "homePage": "https://www.esteelauder.in/products/571/product-catalog/fragrance",
+        "imgURL": "https://www.esteelauder.in/media/export/cms_2.0/FY24_UPDATES/CAMPAIGNS/Holiday-2024/cross-cat/2_Up_25_Off_Fragrance.jpg",
+        "info": "",
+        "stack": ""
+    },
+    {
+        "title": "Prayaas Academy",
+        "id": "3",
+        "homePage": "https://theprayasindia.com/",
+        "imgURL": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/97/d6/a4/97d6a4b8-bf3c-3102-88a3-d8a0769b18a5/source/512x512bb.jpg",
+        "info": "",
+        "stack": ""
+    },
+    {
+        "title": "Memoir",
+        "id": "4",
+        "homePage": "",
+        "imgURL": "https://images.pexels.com/photos/4778611/pexels-photo-4778611.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "info": "",
+        "stack": ""
+    }
+]

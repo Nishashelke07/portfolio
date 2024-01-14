@@ -1,12 +1,19 @@
-::-webkit-scrollbar {
-    display: none;
-}
+// ::-webkit-scrollbar {
+//     display: none;
+// }
 
 .container_hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15% 15%;
+    padding: 10% 12%;
+    background: url("../../../dist/img/artist.jpeg");
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    margin: 1rem;
+    border-radius: 2rem;
 
     .ellipse{
         display: flex;
@@ -18,13 +25,13 @@
 .header {
     
     &-home {
-    background: url('../../../dist/img/background_parallax.jpg');
-    // backdrop-filter: grayscale(1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    // height: 100vh;
-    overflow: hidden;
+    // background: center contain url('../../../dist/img/artist.jpeg');
+    backdrop-filter: grayscale(1);
+    // background-position: 25% 75%;
+    // background-repeat: no-repeat;
+    // background-size: cover;  
+    // height: 100%;
+    // overflow: hidden;
     
     .header-content{
 
@@ -56,12 +63,12 @@
 }
 }
 
-.container {
-    padding: 0 1.5rem;
-    margin: auto;
-    overflow: hidden;
-    max-width: 1280px;
-}
+// .container {
+//     padding: 0 1.5rem;
+//     margin: auto;
+//     overflow: hidden;
+//     max-width: 1280px;
+// }
 
 #main-nav {
     display: flex;
@@ -157,72 +164,6 @@ input[class^='btn-']:hover {
 .lead {
     font-size: 1.3rem;
     text-align: center;
-}
-
-
-.round {
-    position: relative;
-    border: 3px solid #fff;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-
-.span_scroll {
-    z-index: 999;
-    height: 3px;
-    margin:1px;
-    width: 30px;
-    background:#fff;
-    transition: 0.4s ease;
-}
-
-.span_scroll:first-child {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 35%;
-}
-
-.span_scroll:nth-child(2) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 35%;
-}
-
-.span_scroll:nth-child(3) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
-}
-
-.span_scroll:nth-child(4) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
-}
-
-.round:hover span:nth-child(1) {
-    transform: rotate(-135deg);
-}
-
-.round:hover span:nth-child(2) {
-    transform: rotate(135deg);
-}
-
-.round:hover span:nth-child(3) {
-    transform: rotate(225deg);
-}
-
-.round:hover span:nth-child(4) {
-    transform: rotate(-225deg);
 }
 
 @media screen and (max-width: 960px) {

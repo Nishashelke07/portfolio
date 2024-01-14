@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './header.scss'
-import logo from '../../dist/img/logo.png'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Header = () => {
 
@@ -50,7 +49,6 @@ const Header = () => {
         
       
         <div className={(scrolled)? 'header-scrolled' : 'header-contact'}>
-            <img src={logo} alt='logo' id='logo' onClick={scroll.scrollToTop} ></img>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 {button}

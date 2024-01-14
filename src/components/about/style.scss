@@ -2,7 +2,7 @@
   height: 100%;
 
   &-a {
-    background: whitesmoke;
+    // background: whitesmoke;
     padding: 2rem 2rem;
 
   .lead_about{
@@ -14,27 +14,29 @@
   }
 
   .about-info{
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: grid;
-      padding: 2rem 8rem 4rem 8rem;
+      padding: 2rem 4rem 4rem 8rem;
       grid-template-areas: 
               'bioimage bio bio';
       grid-gap: 3rem;
 
         .bio-image {
-            width: 18rem;
-            height: 15rem;
-            object-fit: cover;
-            box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-                           6px 6px 10px rgba(0, 0, 0, 0.2);
-            color: black;
-            border: black 2px solid;
-            filter: grayscale(100);
+            width: 15rem;
+            height: 19rem;
+            object-fit:cover;
+            // box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+            //                6px 6px 10px rgba(0, 0, 0, 0.2);
+            // // color: black;
+            // border: black 2px solid;
+            // filter: grayscale(100);
         }}
 
     .bio-image {
       grid-area: bioimage;
     }
     .bio{
+      height: 19rem;
       grid-area: bio;
       border-left: 3px solid lightcoral;
       padding: 0.8rem;
@@ -42,6 +44,7 @@
       box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
                            6px 6px 10px rgba(0, 0, 0, 0.2);
                 color: black;
+                overflow: auto;
     }
     @media screen and (max-width: 960px) {
       .about-info{
@@ -70,8 +73,8 @@
         
         .skills{
            display: flex;
-           padding: 2% 20%;
-           justify-content: space-between;
+
+           justify-content: center;
         }
         #skill_childs{
               background: whitesmoke;
@@ -86,6 +89,17 @@
               box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
                            6px 6px 10px rgba(0, 0, 0, 0.2);
                 color: black; 
+              margin: 1rem 1rem;
+
+              &:nth-child(even) {
+                background: repeating-linear-gradient(
+  to right,
+  #f6ba52,
+  #f6ba52 10px,
+  #ffd180 10px,
+  whitesmoke 20px
+);
+              }
         }
 
         @media screen and (max-width: 960px) {

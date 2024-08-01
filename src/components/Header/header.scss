@@ -142,73 +142,28 @@
     }
 
     .mobile-menu{
-        // background: red;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 50px;
+        top: 25px;
     }
 
     .link_home {
-        font-size: 1.2rem;
-        padding: 2.2rem ;       
+        font-size: 1.2rem;     
         color: #000;
         font-weight: 500;
-        width: 100%;
-        line-height: 5rem;
-        margin-right: 0;
-        margin-left: 4rem;
-        background: #f4f4f4;
-        border: 1px solid #000;
+        line-height: 1.75rem;
+        border-bottom: 2px solid coral;
+        padding: 0 8px;
+        margin: 1px 4px;
 
         &:hover{
             cursor: pointer;
         }
         
     }
-    .link_about {
-        font-size: 1.2rem;
-        padding:1.8rem 6rem 2rem 6rem;
-        color: #000;
-        font-weight: 500;
-        margin-top: 1rem;
-        margin-left: 4rem;
-        width: 200%;
-        line-height: 6rem;
-        background: #f4f4f4;
-        border: 1px solid #000;
-
-        &:hover{
-            cursor: pointer;
-        }
-            }
-
-    .link_projects {
-        font-size: 1.2rem;
-        padding:2.4rem 6rem 2rem 6rem;
-        color: #000;
-        font-weight: 500;
-        margin-left: 4rem;
-        line-height: 6rem;
-        background: #f4f4f4;
-        border: 1px solid #000;
-
-        width: 100%;
-        &:hover{
-            cursor: pointer;
-        }
-            }
-     .link_contact{
-        font-size: 1.2rem;
-        padding:2.4rem 6rem 2rem 6rem;
-        color: #000;
-        font-weight: 500;
-        margin-left: 4rem;
-        line-height: 6rem;
-        background: #f4f4f4;
-        border: 1px solid #000;
-
-        width: 100%;
-        &:hover{
-            cursor: pointer;
-        }
-    }
+    
     .nav-links {
       text-align: center;
       padding: 2rem;

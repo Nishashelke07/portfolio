@@ -34,7 +34,6 @@
     // overflow: hidden;
     
     .header-content{
-
         hr {
             display: block;
             height: 1px;
@@ -47,6 +46,11 @@
             color: #fff;
             font-size: 5rem;
             font-weight: 500;
+
+            @media screen and (max-width: 960px) {
+                font-size: 2.5rem;
+            }
+
         }
 
         p{
@@ -191,9 +195,7 @@ input[class^='btn-']:hover {
         font-size: 1rem; 
         margin: 0.2rem;
         padding: 0.8rem 0.8rem;
-        
-
-}
+    }
 }
 
 

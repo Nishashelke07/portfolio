@@ -4,9 +4,6 @@ import Typewriter from 'typewriter-effect';
 import Header from '../Header/Header'
 import { animateScroll as scroll } from "react-scroll";
 
-
-
-
 const Hero = () => {
     const getInTouch = (e) => {
         e.preventDefault();

@@ -21,10 +21,19 @@
               'bioimage bio bio';
       grid-gap: 3rem;
 
+      @media screen and (max-width: 960px) {
+        display: flex;
+      }
+
+      @media screen and (max-width: 660px) {
+        display: flex;
+        flex-direction: column;
+      }
+
         .bio-image {
-            width: 15rem;
+            width: 18rem;
             height: 19rem;
-            object-fit:cover;
+            object-fit:fill;
             // box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
             //                6px 6px 10px rgba(0, 0, 0, 0.2);
             // // color: black;

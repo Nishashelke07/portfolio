@@ -3,7 +3,6 @@ import './header.scss'
 import { Link } from "react-scroll";
 
 const Header = () => {
-
     const [scrolled, setScrolled] = useState(false);
     const [click, setClick] = useState(false);
     const [button, setbutton] = useState(true);
@@ -39,15 +38,13 @@ const Header = () => {
       useEffect(() => {
         handleScroll();
         showbutton();
-      })
+      });
 
       window.addEventListener('scroll',handleScroll)
       window.addEventListener('resize', showbutton)
 
     return (
       <>
-        
-      
         <div className={(scrolled)? 'header-scrolled' : 'header-contact'}>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -55,9 +52,9 @@ const Header = () => {
             </div>
             <nav className={click ? 'mobile-menu' : 'main-nav'}>               
                     <Link activeClass="active" to="Home_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500}  className="link_home">  Home </Link>
-                    <Link activeClass="active" to="About_page" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_about"> About </Link>
-                    <Link activeClass="active" to="Projects_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_projects"> Projects </Link>
-                    <Link activeClass="active" to="Contact_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_contact"> Contact </Link>
+                    <Link activeClass="active" to="About_page" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_home"> About </Link>
+                    <Link activeClass="active" to="Projects_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_home"> Projects </Link>
+                    <Link activeClass="active" to="Contact_A" spy={true} smooth={true} offset={0} onClick={closeMobileMenu} duration={500} className="link_home"> Contact </Link>
             </nav>
         </div>
         </>

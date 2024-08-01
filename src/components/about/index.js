@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import mi from "../../dist/img/mii.png"
+import profile from "../../dist/img/profile.png"
 
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
             Let me tell you a bit about myself and what I do...
           </p>
           <div className="about-info">
-            <img src={mi} className="bio-image" alt="my_image"></img>
+            <img src={profile} className="bio-image" alt="my_image"></img>
             <div className="bio bg-light">
               <p>
                 Welcome to my corner of the digital realm! I'm Nishigandha, a
@@ -72,9 +72,9 @@ const About = () => {
             <div id="skill_childs">Sass</div>
             <div id="skill_childs">React.js</div>
             <div id="skill_childs">Redux</div>
-            <div id="skill_childs">Node</div>
+            <div id="skill_childs">React Native</div>
             <div id="skill_childs">Material UI</div>
-            <div id="skill_childs">Java</div>
+            <div id="skill_childs">Tailwind</div>
           </div>
         </div>
       </div>
